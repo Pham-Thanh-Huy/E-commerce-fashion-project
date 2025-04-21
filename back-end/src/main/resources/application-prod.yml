@@ -13,7 +13,7 @@ spring:
   datasource:
     password: root
     username: root
-    url: jdbc:mysql://172.17.0.2:3306/fashion
+    url: jdbc:mysql://172.17.0.3:3306/fashion
   jpa:
     hibernate:
       ddl-auto: update
@@ -22,7 +22,7 @@ spring:
 minio:
   bucket: fashion
   secretKey: minioadmin
-  url: http://127.0.0.1:9000
+  url: http://172.17.0.2:9000
   accessKey: minioadmin
 springdoc:
   swagger-ui:
