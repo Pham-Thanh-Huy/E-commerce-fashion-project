@@ -1,5 +1,5 @@
 import React from 'react';
-
+import IconEmail from "../../../../public/assets/images/icons/icon-email.png"
 const Contact = () => {
     return (
         <React.Fragment>
@@ -13,7 +13,7 @@ const Contact = () => {
                                 </h4>
                                 <div className="bor8 m-b-20 how-pos4-parent">
                                     <input className="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Địa Chỉ Email Của Bạn" />
-                                    <img className="how-pos4 pointer-none" src="../../../../../public/assets/images/icons/icon-email.png" alt="ICON" />
+                                    <img className="how-pos4 pointer-none" src={IconEmail} alt="ICON" />
                                 </div>
                                 <div className="bor8 m-b-30">
                                     <textarea className="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="Chúng Tôi Có Thể Giúp Gì Cho Bạn?" defaultValue={""} />

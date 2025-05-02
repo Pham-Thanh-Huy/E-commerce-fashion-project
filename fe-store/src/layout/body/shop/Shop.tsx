@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 import ProductEntity from '../../../entity/ProductEntity';
 import { getAllProuctPagination } from '../../../utils/CallApi';
 import { formatVND } from '../../../utils/FormatUtil';
-
+import IconHeart01 from '../../../../public/assets/images/icons/icon-heart-01.png'
+import IconHeart02 from '../../../../public/assets/images/icons/icon-heart-02.png'
 
 const Shop = () => {
     const [listProduct, setListProduct] = useState<ProductEntity[]>([]);
@@ -48,8 +49,8 @@ const Shop = () => {
                                         </div>
                                         <div className="block2-txt-child2 flex-r p-t-3">
                                             <a href="#" className="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-                                                <img className="icon-heart1 dis-block trans-04" src="../../../../public/assets/images/icons/icon-heart-01.png" alt="ICON" />
-                                                <img className="icon-heart2 dis-block trans-04 ab-t-l" src="../../../../public/assets/images/icons/icon-heart-02.png" alt="ICON" />
+                                                <img className="icon-heart1 dis-block trans-04" src={IconHeart01} alt="ICON" />
+                                                <img className="icon-heart2 dis-block trans-04 ab-t-l" src={IconHeart02} alt="ICON" />
                                             </a>
                                         </div>
                                     </div>

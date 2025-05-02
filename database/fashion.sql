@@ -409,7 +409,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `address`, `age`, `email`, `first_name`, `is_active`, `last_name`, `password`, `phone_number`, `sex`, `token_active`, `user_image`, `username`) VALUES
-(6, 'Hai Bà Trưng, Hà Nội', 21, 'huypham3062k3@gmail.com', 'Huy', b'1', 'Phạm Thành', '$2a$12$1Fmeu5gybPqqwjAHHJlMF.CiInDfgKaIakn5OWOji/a0EwMsaH0Z6', '0838129818', 'M', 'de66561a-2576-440f-90ab-8a734d6df9c6', 'user_1711430580518.jpg', 'Phamthanhhuy3062k3'),
+(6, 'Hai Bà Trưng, Hà Nội', 21, 'huypham3062k3@gmail.com', 'Huy', b'1', 'Phạm Thành', '$2a$12$mFtKDqgASSJ7lmtyrm5i4ORqay1hLJvFgvRmQgI870f6UoNhr8oam', '0838129818', 'M', 'de66561a-2576-440f-90ab-8a734d6df9c6', 'user_1711430580518.jpg', 'Admin12345678'),
 (8, 'Hai Bà Trưng, Hà Nội', 21, 'huypham3062k322@gmail.com', 'Huy', b'1', 'Phạm Thành', '$2a$10$ksgzPTDEE.i1a6J3hZs6LuNUkcE.zH8sF/ezQhUYlnId9MimF2fmK', '0838931588', 'M', '215777cf-e582-4dc2-9b8a-8d92dc1a3688', 'user_1710298486565.jpg', 'usertestabcd'),
 (14, 'P25 K5 Bách Khoa Hai Bà Trưng Hà Nội', 21, 'hungtuan13111@gmail.com', 'Chiến', b'1', 'Hùng', '$2a$10$PQWGsvadCxaHpnVO4ompee00KYkzkK.N7lr88VJjc1FD5hz6ffhnq', '0833876688', 'M', '5215b83c-4258-413f-a760-9c5b4fa66897', 'user_1715398398576.jpg', 'thanhhuypham3062k33'),
 (15, 'P25 K5 Bách Khoa Hai Bà Trưng Hà Nội', 34, 'nguyenvanhanhocmeo@gmail.com', ' Văn Hạnh', b'1', 'Nguyễn', '$2a$10$o/5oqrh.vRUJxPM2vy3q3.fDDQ82l7yp1QeCGha8shNiuc4GAQnOW', '0838567123', 'M', 'a2525b22-ef92-4c73-924f-696622d72fc7', 'user_1715593861892.jpg', 'nguyenvanhanh'),

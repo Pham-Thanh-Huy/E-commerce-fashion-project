@@ -1,5 +1,7 @@
 import React from 'react';
-
+import FashionFushion from '../../../../../public/assets/images/Fashion Fusion.png'
+import ManBanner from '../../../../../public/assets/images/ManBanner.png'
+import Banner03 from '../../../../../public/assets/images/banner-03.jpg'
 const Banner = () => {
     return (
         <React.Fragment>
@@ -10,7 +12,7 @@ const Banner = () => {
                         <div className="col-md-6 col-xl-4 p-b-30 m-lr-auto">
                             {/* Block1 */}
                             <div className="block1 wrap-pic-w">
-                                <img src="../../../../../public/assets/images/Fashion Fusion.png" alt="IMG-BANNER" />
+                                <img src={FashionFushion} alt="IMG-BANNER" />
                                 <a href="shop" className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
                                     <div className="block1-txt-child1 flex-col-l">
                                         <span className="block1-name ltext-102 trans-04 p-b-8">
@@ -31,7 +33,7 @@ const Banner = () => {
                         <div className="col-md-6 col-xl-4 p-b-30 m-lr-auto">
                             {/* Block1 */}
                             <div className="block1 wrap-pic-w">
-                                <img src="../../../../../public/assets/images/ManBanner.png" alt="IMG-BANNER" />
+                                <img src={ManBanner} alt="IMG-BANNER" />
                                 <a href="shop" className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
                                     <div className="block1-txt-child1 flex-col-l">
                                         <span className="block1-name ltext-102 trans-04 p-b-8">
@@ -52,7 +54,7 @@ const Banner = () => {
                         <div className="col-md-6 col-xl-4 p-b-30 m-lr-auto">
                             {/* Block1 */}
                             <div className="block1 wrap-pic-w">
-                                <img src="../../../../../public/assets/images/banner-03.jpg" alt="IMG-BANNER" />
+                                <img src={Banner03}alt="IMG-BANNER" />
                                 <a href="shop" className="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
                                     <div className="block1-txt-child1 flex-col-l">
                                         <span className="block1-name ltext-102 trans-04 p-b-8">

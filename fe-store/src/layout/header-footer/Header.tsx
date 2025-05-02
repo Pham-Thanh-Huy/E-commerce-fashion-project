@@ -4,7 +4,7 @@ import {getCart} from '../../utils/AddCartUtil';
 import {jwtDecode} from "jwt-decode";
 import {getUserById} from "../../utils/CallApi.ts";
 import User from "../../entity/User.ts";
-
+import logo from  "../../../public/logo.png"
 
 const Header = () => {
     const [quantityCart, setQuantityCart] = useState<number>(0);
@@ -54,7 +54,7 @@ const Header = () => {
                     <nav className="limiter-menu-desktop container">
                         {/* Logo desktop */}
                         <a href="/" className="logo">
-                            <img src="../../../public/logo.png" alt="IMG-LOGO"/>
+                            <img src={logo} alt="IMG-LOGO"/>
                         </a>
                         {/* Menu desktop */}
                         <div className="menu-desktop">
@@ -96,7 +96,7 @@ const Header = () => {
             {/* Header Mobile */}
             <div className="wrap-header-mobile">
                 <div className="logo-mobile">
-                    <a href="index.html"><img src="/assets/images/icons/logo-01.png" alt="IMG-LOGO"/></a>
+                    <a href="index.html"><img src={logo} alt="IMG-LOGO"/></a>
                 </div>
                 <div  className="wrap-icon-header flex-w flex-r-m m-r-15">
                     <div className="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
