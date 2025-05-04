@@ -61,14 +61,8 @@ const Header = () => {
                             <ul className="main-menu">
                                 <li className="active-menu">
                                     <a href="/">Trang chủ</a>
-                                    <ul className="sub-menu">
-                                        <li><a href="/">Homepage 1</a></li>
-                                        <li><a href="/">Homepage 2</a></li>
-                                        <li><a href="/">Homepage 3</a></li>
-                                    </ul>
                                 </li>
                                 <li><a href="shop">Sản phẩm</a></li>
-                                <li><a href="blog">Tin tức</a></li>
                                 <li><a href="about">Về chúng tôi</a></li>
                                 <li><a href="contact">Liên hệ</a></li>
                             </ul>
@@ -118,22 +112,13 @@ const Header = () => {
             {/* Menu Mobile */}
             <div className="menu-mobile">
                 <ul className="main-menu-m">
-                    <li>
-                        <a href="/">Home</a>
-                        <ul className="sub-menu-m">
-                            <li><a href="/">Homepage 1</a></li>
-                            <li><a href="/">Homepage 2</a></li>
-                            <li><a href="/">Homepage 3</a></li>
-                        </ul>
-                        <span className="arrow-main-menu-m">
-                <i className="fa fa-angle-right" aria-hidden="true"/>
-              </span>
+                    <li className="active-menu">
+                        <a href="/">Trang chủ</a>
                     </li>
-                    <li><a href="shop">Shop</a></li>
-                    <li><a href="cart" className="label1 rs1" data-label1="hot">Features</a></li>
-                    <li><a href="blog">Blog</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="shop">Sản phẩm</a></li>
+
+                    <li><a href="about">Về chúng tôi</a></li>
+                    <li><a href="contact">Liên hệ</a></li>
                 </ul>
             </div>
         </header>
