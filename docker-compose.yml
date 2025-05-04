@@ -12,8 +12,10 @@ services:
     networks:
       - deploy
     depends_on:
-      - mysql-db
-
+      mysql-db:
+        condition: service_healthy
+    extra_hosts:
+      - localhost:host-gateway
   fe-cms:
     build:
       context: ./fe-cms
@@ -49,9 +51,12 @@ services:
       - ./database/fashion.sql:/docker-entrypoint-initdb.d/fashion.sql
     networks:
       - deploy
-    depends_on:
-      - minio-storage
-
+    healthcheck:
+      test: ["CMD", "mysql", "-h", "127.0.0.1", "-uroot", "-proot", "-e", "SELECT 1"]
+      interval: 10s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
   minio-storage:
     image: minio/minio:latest
     container_name: minio-container
@@ -63,10 +68,9 @@ services:
       MINIO_ROOT_PASSWORD: minioadmin
     volumes:
       - ./fashion-cloud/fashion-cloud-minio:/data
-    command: server /data --console-address ":9001"
+    command: server /data --console-address ":9001" --address ":9000"
     networks:
       - deploy
-
 volumes:
   mysql-data:
 

@@ -15,7 +15,7 @@ spring:
     username: root
     url: jdbc:mysql://mysql-container:3306/fashion
     hikari:
-      connection-timeout: 30000
+      connection-timeout: 60000
       maximum-pool-size: 10
   jpa:
     hibernate:
@@ -25,7 +25,7 @@ spring:
 minio:
   bucket: fashion
   secretKey: minioadmin
-  url: http://127.0.0.1:9000
+  url: http://localhost:9000
   accessKey: minioadmin
 springdoc:
   swagger-ui:

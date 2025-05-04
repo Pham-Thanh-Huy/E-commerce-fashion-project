@@ -40,8 +40,8 @@ const Shop = () => {
                                     </div>
                                     <div className="block2-txt flex-w flex-t p-t-14">
                                         <div className="block2-txt-child1 flex-col-l ">
-                                            <a href="product-detail.html" className="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                                {product.productName}
+                                            <a href={`/shop-detail?id=${product.productId}`} className="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                                                {product.productName} 
                                             </a>
                                             <span className="stext-105 cl3">
                                                 {formatVND(product.productPrice)}
